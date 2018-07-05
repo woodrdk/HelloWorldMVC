@@ -1,0 +1,39 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css" href="~/css/Style.css">
+</head>
+
+<body>
+
+    <h1>Rob's Website</h1>
+    <hr />
+
+    <nav>
+        @Html.ActionLink("Home", "Index", "Home")
+        @Html.ActionLink("About Us", "About", "Home")
+        @Html.ActionLink("Contact Us", "Contact", "Home")
+        
+    </nav>
+
+    <hr />
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <hr />
+
+    <footer>
+        <h2>
+            &copy; Robert Wood Jr. <br />
+            July 1, 2018
+        </h2>
+    </footer>
+</body>
+
+</html>

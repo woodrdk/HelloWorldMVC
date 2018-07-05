@@ -1,0 +1,31 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Welcome to Joe's Site</title>
+</head>
+<body>
+    <h1>Welcome to the index</h1>
+
+    @if(DateTime.Today.DayOfWeek == DayOfWeek.Monday)
+    {
+        <h2>You have a case of the Mondays</h2>
+    }
+    else
+    {
+        <h2>Thank goodness Monday is over</h2>
+    }
+
+    <ul>
+        @for (int i = 1; i < 1000; i++)
+        {
+            <li>Product #@i</li>
+        }
+    </ul>
+</body>
+</html>

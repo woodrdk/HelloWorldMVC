@@ -1,23 +1,27 @@
 ﻿
-@{
-    Layout = null;
+@{ 
+    ViewBag.Title = "Home";
 }
 
-<!DOCTYPE html>
-
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width" />
-        <title>Welcome to Rob's site</title>
-    </head>
-    
-    <body>
-    
         <h1>WELCOME TO THE INDEX!</h1>
-    
-        @for (int i = 1; i < 1000; i++) {
-            <li>Product # @i</li>
-        }
 
-    </body>
-</html>
+        <h2>@ViewBag.Message</h2>
+
+        <ul>
+            @for (int i = 1; i < 10; i++)
+            {
+                <li>Product # @i</li>
+            }
+        </ul>
+
+        <h3>This C# in HTML has advantages</h3>
+
+        
+            <a href="~/Home/Contact">Contact Us</a> <br />
+            @* Specified controller explicitly*@
+            @Html.ActionLink("Go to Contact us page", "Contact", "Home")    <br />
+
+            @* Home controller is inserted implicitly to the url*@
+            @Html.ActionLink("Go to Contact us page 2nd way", "Contact")
+
+        
