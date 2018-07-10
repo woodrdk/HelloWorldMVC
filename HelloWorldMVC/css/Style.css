@@ -4,10 +4,15 @@
 
 footer {
     text-align: center;
-    color: red;
+    color: greenyellow;
+    background-color: black;
 }
 
-nav{
+nav {
+    text-align: center;
+   
+}
+
+h1{
     text-align: center;
 }
-

@@ -1,25 +1,26 @@
 ﻿
 @{
     ViewBag.Title = "Contact Us";
- }
-    <header>
-        <h1>Contact information is below</h1>
-    </header>
-    
+}
+<header>
+    <h1>Contact information is below</h1>
+</header>
+
+<!--
     <a href="~/Views/Home/Index.cshtml">NON WORKING LINK DO NOT POINT DIRECTLY TO A VIEW</a>
     <br /><br />
+-->
 
+<a href="~/Home/Index">Home Page</a>
+<br /><br />
 
-    <a href="~/Home/Index">Home Page</a>
-    <br /><br />
-    
-    @* the following link is c# code for a link
-        do not put controller after the controller name  ie
-        homecontroller.. or will look for homecontrollercontroller*@
-    @Html.ActionLink("Go to index", "Index", "Home")
+@* the following link is c# code for a link
+    do not put controller after the controller name  ie
+    homecontroller.. or will look for homecontrollercontroller*@
+@Html.ActionLink("Go to index", "Index", "Home")
 
-    <address>
-        4500 Steilacoom Blvd SW 
-        Lakewood WA 98499
-    </address>
+<address>
+    4500 Steilacoom Blvd SW
+    Lakewood WA 98499
+</address>
 
